@@ -7,7 +7,7 @@ pkg.install() {
 }
 
 pkg.link() {
-  fs.link_file vimrc
+  fs.link_file tmux.conf 
   mkdir -p ~/.tmux/plugins
   fs.link_file tmux/plugins/tpm ~/.tmux/plugins/tpm
   ~/.tmux/plugins/tpm/bin/install_plugins
