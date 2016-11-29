@@ -3,7 +3,7 @@
 # kevinkjt2000/tmux ellipsis package
 
 pkg.install() {
-  git submodule update --init --recursive
+  git submodule update --init 
 }
 
 pkg.link() {
@@ -15,6 +15,6 @@ pkg.link() {
 
 pkg.pull() {
   git.pull
-  git submodule update --recursive --remote
+  git submodule update --remote
   ~/.tmux/plugins/tpm/bin/install_plugins
 }
