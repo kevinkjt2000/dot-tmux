@@ -10,6 +10,7 @@ pkg.link() {
   fs.link_file tmux.conf 
   mkdir -p ~/.tmux/plugins
   fs.link_file tmux/plugins/tpm ~/.tmux/plugins/tpm
+  fs.link_file tmux/tmuxline-snapshot.conf ~/.tmux/tmuxline-snapshot.conf
   ~/.tmux/plugins/tpm/bin/install_plugins
 }
 
